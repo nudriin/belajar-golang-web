@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- ! ge = greater than equal ( >= ) -->
+    <!-- * NilaiAkhir >= 80 -->
+    {{if ge .NilaiAkhir 80}}
+    <h1>A</h1>
+    {{else if ge .NilaiAkhir 65}}
+    <h1>B</h1>
+    {{else if ge .NilaiAkhir 50}}
+    <h1>C</h1>
+    {{else}}
+    <h1>D</h1>
+    {{end}}
+</body>
+
+</html>

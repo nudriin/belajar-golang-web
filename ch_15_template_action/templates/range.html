@@ -1,0 +1,11 @@
+<html>
+
+<body>
+    {{range $index, $element := .Hobbies}}
+    <h1>{{$element}}</h1>
+    {{else}}
+    <h1>Tidak ada hobby</h1>
+    {{end}}
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    {{/*Ini Komentar*/}}
+    <h1>Name : {{.Name}}</h1>
+    <!--* With digunakan untuk mengakses nested struct, misal disini nested value dari address -->
+    {{with .Address}}
+    <h1>Address Street : {{.Street}}</h1> <!-- ! Sama seperti .Address .Street -->
+    <h1>Address City : {{.City}}</h1> <!-- ! Sama seperti .Address .City -->
+    {{else}}
+    <h1>Tidak ada alamat</h1>
+    {{end}}
+</body>
+
+
+</html>
